@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="addq" th:action="@{/addq}"   method="post" >
+    <div>
+        <input type="text" name="topic" id="topic"  placeholder="题目">
+    </div>
+    <input type="submit"  value="提交">
+</form>
+</body>
+</html>
