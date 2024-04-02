@@ -15,7 +15,7 @@ public class QuestionServiceImpl implements QuestionService {
     private QuestionDao questionDao;
 
     @Override
-    public Question findById(String id) {
+    public Question findById(Long id) {
         return questionDao.getById(id);
     }
 
@@ -35,7 +35,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public boolean delete(String id) {
+    public boolean delete(Long id) {
         boolean res=true;
         try {
             questionDao.deleteById(id);

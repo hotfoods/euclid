@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questions</title>
+</head>
+<body>
+<div th:each="q:${qs}">
+<!--  <span th:text="${i.index}"></span>-->
+  <span th:text="${q.id}"></span>
+  <span th:text="${q.topic}"></span>
+  <span th:text="${q.createtime}"></span>
+  <span th:text="${q.type}"></span>
+    <a th:href="@{/toaddan/{qid}(qid=${q.id})}">添加答案</a>
+    <a th:href="@{/toans/{qid}(qid=${q.id})}">查看答案</a>
+</div>
+</body>
+</html>

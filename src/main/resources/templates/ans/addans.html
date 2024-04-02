@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>ANs</title>
+</head>
+<body>
+<form id="addq" th:action="@{/addans}"   method="post" >
+    <div>
+        <input type="text" name="solution" id="solution"  placeholder="解答">
+    </div>
+    <div>
+        <input type="hidden" name="qid" id="qid" th:value="${qid}"  placeholder="解答">
+    </div>
+    <input type="submit"  value="提交">
+</form>
+</body>
+</html>

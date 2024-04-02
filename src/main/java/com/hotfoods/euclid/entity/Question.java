@@ -4,10 +4,8 @@ package com.hotfoods.euclid.entity;
 import lombok.*;
 import org.hibernate.Hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Getter
@@ -20,7 +18,10 @@ public class Question {
 
     @Id
     @Column(name = "id")
-    private String id;
+    private Long id;
+
+    @Column(name = "q_no")
+    private String qno;
 
     @Column(name = "topic")
     private String topic;
@@ -30,6 +31,11 @@ public class Question {
 
     @Column(name="createtime")
     private String createtime;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL) // 什么时候用什么时候加载
+    //	关联列 name外键列 referencedColumnName主表里的id
+    private List<Answer> ans;
+
 
     @Override
     public boolean equals(Object o) {

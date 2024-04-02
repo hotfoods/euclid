@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface QuestionService {
 
-    public Question findById(String id);
+    public Question findById(Long id);
 
     public List<Question> findAll();
 
@@ -14,5 +14,5 @@ public interface QuestionService {
 
     public Question update(Question question);
 
-    public boolean delete(String id);
+    public boolean delete(Long id);
 }
