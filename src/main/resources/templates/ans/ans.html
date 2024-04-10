@@ -7,9 +7,9 @@
 <body>
 <div th:each="an:${ans}">
     <!--  <span th:text="${i.index}"></span>-->
-    <span th:text="${an.id}"></span>
-    <span th:text="${an.solution}"></span>
-    <span th:text="${q.createtime}"></span>
+<!--    <div th:text="${an.id}"></div>-->
+    <div th:utext="${an.solution}"></div>
+    <div th:text="${an.createtime}"></div>
 
 <!--    <a th:href="@{/toaddan/{qid}(qid=${q.id})}">添加答案</a>-->
 <!--    <a th:href="@{/toans/{qid}(qid=${q.id})}">查看答案</a>-->

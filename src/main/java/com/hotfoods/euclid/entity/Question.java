@@ -32,7 +32,7 @@ public class Question {
     @Column(name="createtime")
     private String createtime;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL) // 什么时候用什么时候加载
+    @OneToMany(mappedBy = "question" ,cascade = CascadeType.ALL) // 什么时候用什么时候加载
     //	关联列 name外键列 referencedColumnName主表里的id
     private List<Answer> ans;
 
