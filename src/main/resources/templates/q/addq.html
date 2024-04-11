@@ -4,42 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
-<!--    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.js"></script>-->
-<!--    <script th:src="@{/js/mathquill.min.js}"></script>-->
 
-    <script type="text/javascript" src="../dist/formula-editor.min.js"></script>
-    <script type="text/javascript">
-        const editor = new formulaEditor();
-        editor.create('#test');
-    </script>
 
 </head>
 <body>
 <form id="addq" th:action="@{/addq}"   method="post" >
     <div>
         <input type="text" name="topic" id="topic"  placeholder="题目">
-        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`
+<!--        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`-->
     </div>
     <input type="submit"  value="提交">
 </form>
+<a href="https://www.latexlive.com/"  target="_blank">Latex 在线生成网站:https://www.latexlive.com/</a>
 
-<div id="myEdit"></div>
-<button id="getVal">获取值</button>
-<button id="getLatex">获取Latex值</button>
-<script>
-    var mathEdit = new window.MathEdit({
-        elId: 'myEdit',
-        config: {
-            defaultFontSize: '18px',
-            viewFontSize: '12px'
-        }
-    })
-    document.getElementById('getVal').addEventListener('click', function () {
-        console.log(mathEdit.getValue())
-    })
-    document.getElementById('getLatex').addEventListener('click', function () {
-        console.log(mathEdit.getLatex())
-    })
-</script>
 </body>
 </html>

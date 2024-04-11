@@ -26,6 +26,9 @@ public class Question {
     @Column(name = "topic")
     private String topic;
 
+    @Column(name = "views")
+    private Long views;
+
     @Column(name = "type")
     private String type;
 
@@ -35,6 +38,14 @@ public class Question {
     @OneToMany(mappedBy = "question" ,cascade = CascadeType.ALL) // 什么时候用什么时候加载
     //	关联列 name外键列 referencedColumnName主表里的id
     private List<Answer> ans;
+
+    @ManyToOne
+    @JoinColumn(name = "unit_id")
+    private Unit unit;
+
+    @ManyToOne
+    @JoinColumn(name = "subjectid_q")
+    private Subject subjectq;
 
 
     @Override

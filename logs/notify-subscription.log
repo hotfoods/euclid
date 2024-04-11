@@ -1,258 +1,184 @@
-2024-04-03 09:59:50,865 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 11728 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 09:59:50,867 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 09:59:51,455 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 09:59:51,510 - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
-2024-04-03 09:59:51,937 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 09:59:52,041 - Root WebApplicationContext: initialization completed in 1136 ms
-2024-04-03 09:59:52,158 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 09:59:52,212 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 09:59:52,389 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 09:59:52,478 - HikariPool-1 - Starting...
-2024-04-03 09:59:52,659 - HikariPool-1 - Start completed.
-2024-04-03 09:59:52,679 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 09:59:53,247 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 09:59:53,255 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 09:59:53,484 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 09:59:53,622 - Adding welcome page template: index
-2024-04-03 09:59:53,672 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 09:59:53,775 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 09:59:53,783 - Started HotfoodsApplication in 3.203 seconds (JVM running for 4.065)
-2024-04-03 10:00:02,893 - Initializing Servlet 'dispatcherServlet'
-2024-04-03 10:00:02,894 - Completed initialization in 1 ms
-2024-04-03 10:00:23,359 - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "ans/ans": An error happened during template parsing (template: "class path resource [templates/ans/ans.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ans/ans.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "q.createtime" (template: "ans/ans" - line 12, col 11)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	... 48 more
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "q.createtime" (template: "ans/ans" - line 12, col 11)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	... 50 more
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'createtime' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 75 more
-2024-04-03 10:00:44,724 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:00:44,728 - HikariPool-1 - Shutdown initiated...
-2024-04-03 10:00:44,735 - HikariPool-1 - Shutdown completed.
-2024-04-03 10:00:48,260 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 11572 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 10:00:48,260 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 10:00:48,738 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 10:00:48,774 - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
-2024-04-03 10:00:49,074 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 10:00:49,149 - Root WebApplicationContext: initialization completed in 843 ms
-2024-04-03 10:00:49,233 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 10:00:49,255 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 10:00:49,334 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 10:00:49,390 - HikariPool-1 - Starting...
-2024-04-03 10:00:49,523 - HikariPool-1 - Start completed.
-2024-04-03 10:00:49,533 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 10:00:49,885 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 10:00:49,891 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:00:50,083 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 10:00:50,252 - Adding welcome page template: index
-2024-04-03 10:00:50,314 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 10:00:50,419 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 10:00:50,428 - Started HotfoodsApplication in 2.451 seconds (JVM running for 3.318)
-2024-04-03 10:01:20,573 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:01:20,575 - HikariPool-1 - Shutdown initiated...
-2024-04-03 10:01:20,579 - HikariPool-1 - Shutdown completed.
-2024-04-03 10:01:23,303 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 2392 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 10:01:23,306 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 10:01:23,769 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 10:01:23,805 - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
-2024-04-03 10:01:24,105 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 10:01:24,183 - Root WebApplicationContext: initialization completed in 848 ms
-2024-04-03 10:01:24,262 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 10:01:24,285 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 10:01:24,363 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 10:01:24,425 - HikariPool-1 - Starting...
-2024-04-03 10:01:24,579 - HikariPool-1 - Start completed.
-2024-04-03 10:01:24,595 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 10:01:24,995 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 10:01:25,002 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:01:25,208 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 10:01:25,325 - Adding welcome page template: index
-2024-04-03 10:01:25,363 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 10:01:25,448 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 10:01:25,455 - Started HotfoodsApplication in 2.405 seconds (JVM running for 3.337)
-2024-04-03 10:24:03,879 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:24:03,881 - HikariPool-1 - Shutdown initiated...
-2024-04-03 10:24:03,891 - HikariPool-1 - Shutdown completed.
-2024-04-03 10:24:06,203 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 20400 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 10:24:06,204 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 10:24:06,656 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 10:24:06,699 - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
-2024-04-03 10:24:07,019 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 10:24:07,096 - Root WebApplicationContext: initialization completed in 857 ms
-2024-04-03 10:24:07,174 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 10:24:07,204 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 10:24:07,287 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 10:24:07,346 - HikariPool-1 - Starting...
-2024-04-03 10:24:07,480 - HikariPool-1 - Start completed.
-2024-04-03 10:24:07,489 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 10:24:07,842 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 10:24:07,847 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 10:24:08,034 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 10:24:08,137 - Adding welcome page template: index
-2024-04-03 10:24:08,174 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 10:24:08,248 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 10:24:08,255 - Started HotfoodsApplication in 2.304 seconds (JVM running for 3.198)
-2024-04-03 10:24:16,363 - Initializing Servlet 'dispatcherServlet'
-2024-04-03 10:24:16,364 - Completed initialization in 1 ms
-2024-04-03 14:09:03,887 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 14:09:03,901 - HikariPool-1 - Shutdown initiated...
-2024-04-03 14:09:03,905 - HikariPool-1 - Shutdown completed.
-2024-04-03 15:06:19,045 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 1072 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 15:06:19,047 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 15:06:19,502 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 15:06:19,540 - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
-2024-04-03 15:06:19,991 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 15:06:20,117 - Root WebApplicationContext: initialization completed in 1032 ms
-2024-04-03 15:06:20,242 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 15:06:20,291 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 15:06:20,422 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 15:06:20,519 - HikariPool-1 - Starting...
-2024-04-03 15:06:20,694 - HikariPool-1 - Start completed.
-2024-04-03 15:06:20,709 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 15:06:21,201 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 15:06:21,207 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:06:21,437 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 15:06:21,539 - Adding welcome page template: index
-2024-04-03 15:06:21,580 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 15:06:21,661 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 15:06:21,668 - Started HotfoodsApplication in 2.938 seconds (JVM running for 3.826)
-2024-04-03 15:07:13,389 - Initializing Servlet 'dispatcherServlet'
-2024-04-03 15:07:13,390 - Completed initialization in 1 ms
-2024-04-03 15:14:34,678 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:14:34,679 - HikariPool-1 - Shutdown initiated...
-2024-04-03 15:14:34,683 - HikariPool-1 - Shutdown completed.
-2024-04-03 15:14:37,447 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 23876 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 15:14:37,448 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 15:14:37,899 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 15:14:37,933 - Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
-2024-04-03 15:14:38,234 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 15:14:38,313 - Root WebApplicationContext: initialization completed in 835 ms
-2024-04-03 15:14:38,393 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 15:14:38,416 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 15:14:38,492 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 15:14:38,548 - HikariPool-1 - Starting...
-2024-04-03 15:14:38,685 - HikariPool-1 - Start completed.
-2024-04-03 15:14:38,696 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 15:14:39,053 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 15:14:39,059 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:14:39,247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 15:14:39,354 - Adding welcome page template: index
-2024-04-03 15:14:39,393 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 15:14:39,470 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 15:14:39,476 - Started HotfoodsApplication in 2.286 seconds (JVM running for 3.226)
-2024-04-03 15:15:04,688 - Initializing Servlet 'dispatcherServlet'
-2024-04-03 15:15:04,689 - Completed initialization in 1 ms
-2024-04-03 15:27:45,539 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:27:45,542 - HikariPool-1 - Shutdown initiated...
-2024-04-03 15:27:45,549 - HikariPool-1 - Shutdown completed.
-2024-04-03 15:27:48,540 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 16436 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
-2024-04-03 15:27:48,541 - No active profile set, falling back to 1 default profile: "default"
-2024-04-03 15:27:48,999 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-03 15:27:49,036 - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
-2024-04-03 15:27:49,381 - Tomcat initialized with port(s): 8080 (http)
-2024-04-03 15:27:49,484 - Root WebApplicationContext: initialization completed in 906 ms
-2024-04-03 15:27:49,576 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-03 15:27:49,618 - HHH000412: Hibernate ORM core version 5.6.12.Final
-2024-04-03 15:27:49,746 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-04-03 15:27:49,828 - HikariPool-1 - Starting...
-2024-04-03 15:27:49,980 - HikariPool-1 - Start completed.
-2024-04-03 15:27:49,993 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-04-03 15:27:50,461 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-04-03 15:27:50,468 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:27:50,681 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-03 15:27:50,789 - Adding welcome page template: index
-2024-04-03 15:27:50,830 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2024-04-03 15:27:50,911 - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-03 15:27:50,918 - Started HotfoodsApplication in 2.676 seconds (JVM running for 3.554)
-2024-04-03 15:28:03,213 - Initializing Servlet 'dispatcherServlet'
-2024-04-03 15:28:03,214 - Completed initialization in 1 ms
-2024-04-03 15:58:10,331 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-03 15:58:10,333 - HikariPool-1 - Shutdown initiated...
-2024-04-03 15:58:10,336 - HikariPool-1 - Shutdown completed.
+2024-04-11 09:52:50,138 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 11856 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 09:52:50,141 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 09:52:50,851 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 09:52:50,915 - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2024-04-11 09:52:51,354 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 09:52:51,547 - Root WebApplicationContext: initialization completed in 1358 ms
+2024-04-11 09:52:51,674 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 09:52:51,723 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 09:52:51,894 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 09:52:51,999 - HikariPool-1 - Starting...
+2024-04-11 09:52:52,201 - HikariPool-1 - Start completed.
+2024-04-11 09:52:52,221 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 09:52:52,949 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 09:52:52,957 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 09:52:53,222 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 09:52:53,372 - Adding welcome page template: index
+2024-04-11 09:52:53,433 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 09:52:53,542 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 09:52:53,551 - Started HotfoodsApplication in 3.959 seconds (JVM running for 6.107)
+2024-04-11 10:31:10,792 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 10:31:10,802 - HikariPool-1 - Shutdown initiated...
+2024-04-11 10:31:10,810 - HikariPool-1 - Shutdown completed.
+2024-04-11 10:41:54,031 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 1248 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 10:41:54,033 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 10:41:54,543 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 10:41:54,652 - Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2024-04-11 10:41:55,002 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 10:41:55,079 - Root WebApplicationContext: initialization completed in 1014 ms
+2024-04-11 10:41:55,159 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 10:41:55,183 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 10:41:55,259 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 10:41:55,317 - HikariPool-1 - Starting...
+2024-04-11 10:41:55,455 - HikariPool-1 - Start completed.
+2024-04-11 10:41:55,467 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 10:41:55,932 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 10:41:55,938 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 10:41:56,139 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 10:41:56,253 - Adding welcome page template: index
+2024-04-11 10:41:56,296 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 10:41:56,376 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 10:41:56,385 - Started HotfoodsApplication in 2.602 seconds (JVM running for 3.489)
+2024-04-11 10:42:04,641 - Initializing Servlet 'dispatcherServlet'
+2024-04-11 10:42:04,642 - Completed initialization in 1 ms
+2024-04-11 10:43:30,831 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 10:43:30,834 - HikariPool-1 - Shutdown initiated...
+2024-04-11 10:43:30,851 - HikariPool-1 - Shutdown completed.
+2024-04-11 10:43:36,631 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 17052 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 10:43:36,633 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 10:43:37,445 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 10:43:37,500 - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-04-11 10:43:37,955 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 10:43:38,061 - Root WebApplicationContext: initialization completed in 1376 ms
+2024-04-11 10:43:38,158 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 10:43:38,186 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 10:43:38,285 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 10:43:38,355 - HikariPool-1 - Starting...
+2024-04-11 10:43:38,523 - HikariPool-1 - Start completed.
+2024-04-11 10:43:38,538 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 10:43:39,002 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 10:43:39,008 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 10:43:39,235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 10:43:39,372 - Adding welcome page template: index
+2024-04-11 10:43:39,424 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 10:43:39,516 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 10:43:39,524 - Started HotfoodsApplication in 3.247 seconds (JVM running for 4.691)
+2024-04-11 11:00:44,707 - Initializing Servlet 'dispatcherServlet'
+2024-04-11 11:00:44,708 - Completed initialization in 1 ms
+2024-04-11 11:02:16,420 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:02:16,422 - HikariPool-1 - Shutdown initiated...
+2024-04-11 11:02:16,427 - HikariPool-1 - Shutdown completed.
+2024-04-11 11:02:19,253 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 12712 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 11:02:19,254 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 11:02:19,694 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 11:02:19,734 - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2024-04-11 11:02:20,028 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 11:02:20,103 - Root WebApplicationContext: initialization completed in 820 ms
+2024-04-11 11:02:20,177 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 11:02:20,198 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 11:02:20,270 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 11:02:20,323 - HikariPool-1 - Starting...
+2024-04-11 11:02:20,461 - HikariPool-1 - Start completed.
+2024-04-11 11:02:20,471 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 11:02:20,832 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 11:02:20,837 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:02:21,023 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 11:02:21,123 - Adding welcome page template: index
+2024-04-11 11:02:21,160 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 11:02:21,230 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 11:02:21,236 - Started HotfoodsApplication in 2.218 seconds (JVM running for 3.063)
+2024-04-11 11:02:39,015 - Initializing Servlet 'dispatcherServlet'
+2024-04-11 11:02:39,016 - Completed initialization in 1 ms
+2024-04-11 11:03:19,739 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:03:19,742 - HikariPool-1 - Shutdown initiated...
+2024-04-11 11:03:19,749 - HikariPool-1 - Shutdown completed.
+2024-04-11 11:03:24,214 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 13016 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 11:03:24,215 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 11:03:24,807 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 11:03:24,855 - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-04-11 11:03:25,215 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 11:03:25,307 - Root WebApplicationContext: initialization completed in 1020 ms
+2024-04-11 11:03:25,404 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 11:03:25,434 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 11:03:25,525 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 11:03:25,587 - HikariPool-1 - Starting...
+2024-04-11 11:03:25,744 - HikariPool-1 - Start completed.
+2024-04-11 11:03:25,756 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 11:03:26,207 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 11:03:26,214 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:03:26,449 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 11:03:26,565 - Adding welcome page template: index
+2024-04-11 11:03:26,609 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 11:03:26,699 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 11:03:26,708 - Started HotfoodsApplication in 2.956 seconds (JVM running for 4.854)
+2024-04-11 11:52:58,528 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:52:58,529 - HikariPool-1 - Shutdown initiated...
+2024-04-11 11:52:58,535 - HikariPool-1 - Shutdown completed.
+2024-04-11 11:53:01,695 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 14784 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 11:53:01,696 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 11:53:02,193 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 11:53:02,232 - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2024-04-11 11:53:02,565 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 11:53:02,653 - Root WebApplicationContext: initialization completed in 928 ms
+2024-04-11 11:53:02,736 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 11:53:02,763 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 11:53:02,853 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 11:53:02,912 - HikariPool-1 - Starting...
+2024-04-11 11:53:03,059 - HikariPool-1 - Start completed.
+2024-04-11 11:53:03,073 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 11:53:03,508 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 11:53:03,514 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:53:03,738 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 11:53:03,869 - Adding welcome page template: index
+2024-04-11 11:53:03,921 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 11:53:04,012 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 11:53:04,020 - Started HotfoodsApplication in 2.618 seconds (JVM running for 3.567)
+2024-04-11 11:57:28,431 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 11:57:28,432 - HikariPool-1 - Shutdown initiated...
+2024-04-11 11:57:28,441 - HikariPool-1 - Shutdown completed.
+2024-04-11 14:05:55,590 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 21624 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 14:05:55,590 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 14:05:56,051 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 14:05:56,092 - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2024-04-11 14:05:56,418 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 14:05:56,499 - Root WebApplicationContext: initialization completed in 879 ms
+2024-04-11 14:05:56,580 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 14:05:56,603 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 14:05:56,683 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 14:05:56,741 - HikariPool-1 - Starting...
+2024-04-11 14:05:56,899 - HikariPool-1 - Start completed.
+2024-04-11 14:05:56,912 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 14:05:57,396 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 14:05:57,403 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 14:05:57,626 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 14:05:57,744 - Adding welcome page template: index
+2024-04-11 14:05:57,784 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 14:05:57,873 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 14:05:57,879 - Started HotfoodsApplication in 2.536 seconds (JVM running for 3.496)
+2024-04-11 14:06:20,561 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 14:06:20,563 - HikariPool-1 - Shutdown initiated...
+2024-04-11 14:06:20,567 - HikariPool-1 - Shutdown completed.
+2024-04-11 14:56:28,900 - Starting HotfoodsApplication using Java 1.8.0_362 on LAPTOP-F6DALMHQ with PID 21684 (D:\hotfoods-study\target\classes started by ujun in D:\hotfoods-study)
+2024-04-11 14:56:28,901 - No active profile set, falling back to 1 default profile: "default"
+2024-04-11 14:56:29,332 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-11 14:56:29,370 - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2024-04-11 14:56:29,677 - Tomcat initialized with port(s): 8080 (http)
+2024-04-11 14:56:29,751 - Root WebApplicationContext: initialization completed in 815 ms
+2024-04-11 14:56:29,824 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-11 14:56:29,845 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-04-11 14:56:29,914 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-11 14:56:29,967 - HikariPool-1 - Starting...
+2024-04-11 14:56:30,125 - HikariPool-1 - Start completed.
+2024-04-11 14:56:30,143 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-11 14:56:30,667 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-11 14:56:30,673 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 14:56:30,893 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-11 14:56:30,994 - Adding welcome page template: index
+2024-04-11 14:56:31,032 - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-04-11 14:56:31,107 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-11 14:56:31,114 - Started HotfoodsApplication in 2.468 seconds (JVM running for 3.338)
+2024-04-11 14:56:31,481 - Initializing Servlet 'dispatcherServlet'
+2024-04-11 14:56:31,482 - Completed initialization in 1 ms
+2024-04-11 14:57:45,617 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-11 14:57:45,619 - HikariPool-1 - Shutdown initiated...
+2024-04-11 14:57:45,626 - HikariPool-1 - Shutdown completed.
