@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-
+<form id="addq" th:action="@{/addunit}"   method="post" >
+    <div>
+        <select name="subjectid">
+            <option th:each="subject:${subjects}"
+                    th:value="${subject.id}"
+                    th:selected="${subject.id}"
+                    th:text="${subject.name}">
+        </select>
+    </div>
+    <div>
+        <input type="text" name="name" id="name"  placeholder="单元名称">
+        <!--        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`-->
+    </div>
+    <input type="submit"  value="提交">
+</form>
 </body>
 </html>

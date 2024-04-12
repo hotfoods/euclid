@@ -3,19 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
-
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+    <!--    <script-->
+    <!--            src="https://code.jquery.com/jquery-3.7.1.min.js"-->
+    <!--            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="-->
+    <!--            crossorigin="anonymous"></script>-->
+    <!--    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>-->
+    <script type="text/javascript" th:src="@{/js/jquery-3.7.1.min.js}"></script>
 
 </head>
 <body>
-<form id="addq" th:action="@{/addq}"   method="post" >
+<form id="addq" th:action="@{/addq}" method="post">
     <div>
-        <input type="text" name="topic" id="topic"  placeholder="题目">
-<!--        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`-->
+        <div>
+            <select name="subject" id="subjectSelect" onchange="findUnit()">
+                <option th:each="subject:${subjects}"
+                        th:selected="${subject.id}"
+                        th:value="${subject.id}"
+                        th:text="${subject.name}"
+                >
+            </select>
+        </div>
+        <div>
+            <select id="unitSelect" name="unit"></select>
+        </div>
     </div>
-    <input type="submit"  value="提交">
-</form>
-<a href="https://www.latexlive.com/"  target="_blank">Latex 在线生成网站:https://www.latexlive.com/</a>
 
+    <div>
+        <input type="text" name="topic" id="topic" placeholder="题目">
+        <!--        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`-->
+    </div>
+    <input type="submit" value="提交">
+</form>
+<a href="https://www.latexlive.com/" target="_blank">Latex 在线生成网站:https://www.latexlive.com/</a>
+
+<script th:inline="javascript" type="text/javascript">
+    // var subjects=$("#subjects").val();
+    //console.log(subjects)
+    function findUnit() {
+        // var subjectSelect=document.getElementById("subjectSelect");
+        // var index=subjectSelect.selectedIndex;
+        // var subject=subject.options[index].id;
+        var subjetid = $("#subjectSelect option:selected").val();
+        console.log(subjetid)
+        $.ajax({
+            type: "GET",
+            dataType: 'json',
+            url: "/subject/units/" + subjetid,
+            async: true,
+            success: function (data) {
+                console.log(data);
+                units = data.obj;
+                $("#unitSelect").empty();
+                var unitSelect;
+                if (data.obj!=null){
+                    for (var i = 0; i < units.length; i++) {
+                        unitSelect += ("<option selected='"+units[i].uid+"' value=' " + units[i].uid + " ' > " + units[i].name + "</option>");
+                    }
+                }
+                $("#unitSelect").append(unitSelect);
+            }
+        })
+    }
+
+</script>
 </body>
 </html>

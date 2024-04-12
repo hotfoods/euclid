@@ -2,6 +2,7 @@ package com.hotfoods.euclid.service.impl;
 
 import com.hotfoods.euclid.dao.QuestionDao;
 import com.hotfoods.euclid.entity.Question;
+import com.hotfoods.euclid.entity.Unit;
 import com.hotfoods.euclid.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,6 +44,11 @@ public class QuestionServiceImpl implements QuestionService {
         catch (Exception ex){
             res=false;
         }
-        return false;
+        return res;
+    }
+
+    @Override
+    public List<Question> findByUnit(Unit unit) {
+        return questionDao.findByUnit(unit);
     }
 }

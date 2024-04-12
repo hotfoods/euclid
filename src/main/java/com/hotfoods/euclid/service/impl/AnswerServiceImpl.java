@@ -43,6 +43,6 @@ public class AnswerServiceImpl implements AnswerService {
         catch (Exception ex){
             res=false;
         }
-        return false;
+        return res;
     }
 }

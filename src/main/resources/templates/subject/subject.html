@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="subject:${subjects}">
+    <!--  <span th:text="${i.index}"></span>-->
+<!--    <span th:text="${q.id}"></span>-->
+    <span th:text="${subject.name}"></span>
+<!--    <span th:text="${q.createtime}"></span>-->
+<!--    <span th:text="${q.type}"></span>-->
+<!--    <a th:href="@{/toaddan/{qid}(qid=${q.id})}">添加答案</a>-->
+    <a th:href="@{/tounit/{subjectid}(subjectid=${subject.id})}">查看单元</a>
+</div>
+</body>
+</html>

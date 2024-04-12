@@ -1,16 +1,14 @@
 package com.hotfoods.euclid.entity;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Getter
 @Setter
-@ToString
 @RequiredArgsConstructor
 @Entity
 @Table(name = "unit")
@@ -23,7 +21,8 @@ public class Unit {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.REFRESH},optional = false)
     @JoinColumn(name = "subjectid")
     private Subject subject;
 

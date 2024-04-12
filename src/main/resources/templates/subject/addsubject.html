@@ -5,6 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-
+<form id="addq" th:action="@{/addsubject}"   method="post" >
+    <div>
+        <input type="text" name="name" id="name"  placeholder="科目名称">
+        <!--        `i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`-->
+    </div>
+    <input type="submit"  value="提交">
+</form>
 </body>
 </html>
